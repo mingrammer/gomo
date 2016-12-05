@@ -3,6 +3,7 @@ package main
 import (
 	"io/ioutil"
 	"os"
+	"path/filepath"
 	"strings"
 	"testing"
 
@@ -18,7 +19,7 @@ func setupTestCase(t *testing.T) {
 	t.Log("Setup testcase")
 
 	homeDir = manager.GetHomeDir()
-	memoFile = homeDir + "/.gomo-tmp/memo.json"
+	memoFile = filepath.Join(homeDir, ".gomo-tmp", "memo.json")
 
 	os.Remove(memoFile)
 }
@@ -27,7 +28,7 @@ func teardownTestCase(t *testing.T) {
 	t.Log("Teardown testcase")
 
 	homeDir = manager.GetHomeDir()
-	memoFile = homeDir + "/.gomo-tmp/memo.json"
+	memoFile = filepath.Join(homeDir, ".gomo-tmp", "memo.json")
 
 	os.Remove(memoFile)
 }

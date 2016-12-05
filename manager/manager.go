@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"os"
+	"path/filepath"
 	"runtime"
 )
 
@@ -26,7 +27,7 @@ func New() *Manager {
 	homeDir := GetHomeDir()
 
 	return &Manager{
-		file:     homeDir + "/.gomo/memo.json",
+		file:     filepath.Join(homeDir, ".gomo", "memo.json"),
 		commands: make(map[string]Command),
 	}
 }
