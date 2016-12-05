@@ -20,7 +20,7 @@ var (
 	}
 	newCommand = manager.Command{
 		Name:  "new",
-		Usage: "new    : gomo new [content]",
+		Usage: "new    : gomo new 'content'",
 		Run:   newFunc,
 	}
 	listCommand = manager.Command{
@@ -30,7 +30,7 @@ var (
 	}
 	deleteCommand = manager.Command{
 		Name:  "delete",
-		Usage: "delete : gomo delete",
+		Usage: "delete : gomo delete [number]",
 		Run:   deleteFunc,
 	}
 )
