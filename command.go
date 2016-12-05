@@ -62,7 +62,7 @@ func initFunc(memoFile string, args []string) error {
 // newFunc creates new memo and store that to file.
 func newFunc(memoFile string, args []string) error {
 	if len(args) != 1 {
-		return errors.New("Invalid arguments: new command must receives only one argument")
+		return errors.New("Invalid arguments: new command must take only one argument")
 	}
 
 	memos, err := getAllMemos(memoFile)
