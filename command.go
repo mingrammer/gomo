@@ -9,6 +9,8 @@ import (
 	"path/filepath"
 	"time"
 
+	"strconv"
+
 	"github.com/mingrammer/gomo/manager"
 )
 
@@ -101,17 +103,29 @@ func listFunc(memoFile string, args []string) error {
 
 // deleteFunc deletes a memo.
 func deleteFunc(memoFile string, args []string) error {
-	var memoNo int
+	nArgs := len(args)
+
+	if nArgs > 1 {
+		return errors.New("Invalid arguments: delete command could take one argument at most")
+	}
 
 	memos, err := getAllMemos(memoFile)
 	if err != nil {
 		return err
 	}
 
-	PrintMemos(memos)
+	var memoNo int
 
-	fmt.Print("Enter memo number to delete : ")
-	fmt.Scanln(&memoNo)
+	if nArgs == 1 {
+		if memoNo, err = strconv.Atoi(args[0]); err != nil {
+			return errors.New("Integer is allowed only")
+		}
+	} else {
+		PrintMemos(memos)
+
+		fmt.Print("Enter memo number to delete : ")
+		fmt.Scanln(&memoNo)
+	}
 
 	if memoNo < 1 || memoNo > len(memos) {
 		return errors.New("Invalid number")
