@@ -17,9 +17,9 @@ It provides minimal functions for memo or todo. not much functions.
 Very simple to use.
 
 ## Installation
-Just `go get github.com/mingrammer/gomo`
+`go get github.com/mingrammer/gomo`
 
-> `go` is required to use it now. I'll register it to `brew` and other package managers of many linux dist.
+You need to add `$GOPATH/bin` to your `$PATH`
 
 ## Usage
 * `gomo init` : init memo file on your machine
