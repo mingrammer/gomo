@@ -75,7 +75,7 @@ func TestNewFunc(t *testing.T) {
 	}
 }
 
-func TestDelete(t *testing.T) {
+func TestDeleteFunc(t *testing.T) {
 	setupTestCase(t)
 	defer teardownTestCase(t)
 
