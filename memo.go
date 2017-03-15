@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/dustin/go-humanize"
 	"github.com/fatih/color"
 )
 
@@ -21,8 +22,8 @@ func PrintMemos(memos []Memo) {
 		bold := color.New(color.Bold).SprintFunc()
 
 		for i, memo := range memos {
-			fmt.Printf("\n%s", memo.CreatedAt.Format("2006-01-02 15:04:05"))
 			fmt.Printf("\n[%s] %s\n", green(i+1), bold(memo.Content))
+			fmt.Printf("created %s.\n", humanize.Time(memo.CreatedAt))
 		}
 		fmt.Println()
 	} else {
