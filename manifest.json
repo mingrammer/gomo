@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+        "github.com/fatih/color": {
+            "branch": "master"
+        }
+    }
+}
