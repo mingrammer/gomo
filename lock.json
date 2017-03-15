@@ -1,6 +1,14 @@
 {
-    "memo": "f62a2a77b8658086daf5e1e4ef285155a63fd3af45ff0025ad99d9f9b7496874",
+    "memo": "d0b2183d73fbdc81833e07481631b8268c56764525005ac6e2ca9a64944b1548",
     "projects": [
+        {
+            "name": "github.com/dustin/go-humanize",
+            "branch": "master",
+            "revision": "259d2a102b871d17f30e3cd9881a642961a1e486",
+            "packages": [
+                "."
+            ]
+        },
         {
             "name": "github.com/fatih/color",
             "branch": "master",

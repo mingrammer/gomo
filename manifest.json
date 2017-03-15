@@ -1,5 +1,8 @@
 {
     "dependencies": {
+        "github.com/dustin/go-humanize": {
+            "branch": "master"
+        },
         "github.com/fatih/color": {
             "branch": "master"
         }
