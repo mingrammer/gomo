@@ -1,9 +1,9 @@
 {
-    "memo": "3dda2c86ff2c7e9f397e9d5a98fb50cec21d26a9277daab9c611c37917e98b77",
+    "memo": "f62a2a77b8658086daf5e1e4ef285155a63fd3af45ff0025ad99d9f9b7496874",
     "projects": [
         {
             "name": "github.com/fatih/color",
-            "version": "v1.4.1",
+            "branch": "master",
             "revision": "9131ab34cf20d2f6d83fdc67168a5430d1c7dc23",
             "packages": [
                 "."
@@ -11,16 +11,16 @@
         },
         {
             "name": "github.com/mattn/go-colorable",
-            "version": "v0.0.7",
-            "revision": "d228849504861217f796da67fae4f6e347643f15",
+            "branch": "master",
+            "revision": "a392f450ea64cee2b268dfaacdc2502b50a22b18",
             "packages": [
                 "."
             ]
         },
         {
             "name": "github.com/mattn/go-isatty",
-            "version": "v0.0.1",
-            "revision": "3a115632dcd687f9c8cd01679c83a06a0e21c1f3",
+            "branch": "master",
+            "revision": "57fdcb988a5c543893cc61bce354a6e24ab70022",
             "packages": [
                 "."
             ]
